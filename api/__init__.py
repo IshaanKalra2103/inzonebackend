@@ -6,7 +6,7 @@ cred = credentials.Certificate("api/key.json")
 default_app = initialize_app(cred)
 
 app = Flask(__name__)
-CORS(app, resources={r"*": {"origins": "http://localhost:3000"}})
+CORS(app)
 
 def create_app():
     
